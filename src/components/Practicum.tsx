@@ -71,7 +71,8 @@ const Practicum = () => {
   };
 
   return (
-    <section id="practicum" className="py-24 bg-gradient-to-b from-sage/10 to-background">
+    <>
+    <section id="practicum" className="py-24 bg-gradient-to-b from-sand/30 to-white relative violet-ribbon-bg">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center mb-16 fade-on-scroll">
           <div className="inline-block mb-4 px-4 py-2 bg-sage/10 rounded-full">
@@ -80,10 +81,24 @@ const Practicum = () => {
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-6">
             Алхимия свободного движения
           </h2>
-          <p className="text-xl text-foreground/70 leading-relaxed">
+          <p className="text-xl text-foreground/70 leading-relaxed mb-6">
             7 дней. 7 ключей. 7 упражнений.<br />
             Инициация в состояние Жизни.
           </p>
+          <div className="flex flex-wrap gap-4 justify-center text-sm text-foreground/60">
+            <div className="flex items-center gap-2">
+              <Icon name="Monitor" size={16} className="text-violet-600" />
+              <span>Онлайн формат</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Icon name="Users" size={16} className="text-violet-600" />
+              <span>Офлайн встречи</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Icon name="Calendar" size={16} className="text-violet-600" />
+              <span>Ежемесячно</span>
+            </div>
+          </div>
         </div>
 
         <div className="max-w-5xl mx-auto mb-16">
@@ -135,10 +150,11 @@ const Practicum = () => {
             </div>
 
             <div className="border-t border-sage/20 pt-8 space-y-6">
-              <div className="text-center">
+              <div className="text-center space-y-3">
                 <p className="text-lg font-semibold text-primary mb-2">Условия участия</p>
-                <p className="text-foreground/70">Участие — за добровольное пожертвование по итогу практикума</p>
-                <p className="text-sm text-foreground/60 mt-2">Количество мест ограничено</p>
+                <p className="text-foreground/70">Участие — благодарность по сердцу от состояния по итогу практикума</p>
+                <p className="text-sm font-medium text-violet-600">Для участников Клуба «Проявление» — включено</p>
+                <p className="text-sm text-foreground/60">Количество мест ограничено</p>
               </div>
               
               <div className="flex justify-center">
@@ -158,7 +174,53 @@ const Practicum = () => {
         </div>
       </div>
     </section>
-  );
+    
+    <section id="keys" className="py-24 bg-gradient-to-b from-white to-violet-50/30">
+      <div className="container mx-auto px-6">
+        <div className="max-w-4xl mx-auto text-center mb-16 fade-on-scroll">
+          <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-6">
+            7 Ключей Трансформации
+          </h2>
+          <p className="text-lg text-foreground/70">
+            Каждый ключ — это ступень целостного процесса, где физическое движение<br />
+            становится проводником глубинных изменений
+          </p>
+        </div>
+
+        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-6 fade-on-scroll">
+          {keys.map((key, index) => (
+            <Card 
+              key={index}
+              className="p-8 bg-white/70 backdrop-blur-sm border-violet-200/50 hover:shadow-xl transition-all duration-300 hover:border-violet-300"
+            >
+              <div className="flex items-start gap-4 mb-4">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-violet-100 to-purple-100 flex items-center justify-center flex-shrink-0">
+                  <span className="text-2xl">{key.emoji}</span>
+                </div>
+                <div className="flex-1">
+                  <div className="text-xs font-semibold text-violet-600 mb-1">День {key.number}</div>
+                  <h3 className="font-serif font-bold text-xl text-primary mb-1">
+                    {key.title}
+                  </h3>
+                  <p className="text-sm font-medium text-violet-600/80">{key.subtitle}</p>
+                </div>
+              </div>
+              <p className="text-foreground/70 leading-relaxed">{key.description}</p>
+            </Card>
+          ))}
+        </div>
+
+        <div className="max-w-3xl mx-auto mt-12 text-center fade-on-scroll">
+          <Card className="p-8 bg-gradient-to-br from-violet-50 to-purple-50 border-violet-200/50">
+            <p className="text-foreground/70 italic leading-relaxed">
+              «Проходя через эти 7 ключей, вы не осваиваете технику. Вы проходите инициацию в новое состояние сознания. Вы обретаете внутренний компас, незыблемый покой, спонтанную гармонию и смелость быть собой»
+            </p>
+          </Card>
+        </div>
+      </div>
+    </section>
+    </>
+  )
 };
 
 export default Practicum;

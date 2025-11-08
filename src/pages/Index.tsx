@@ -30,7 +30,7 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white via-sand/10 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-white via-sand/10 to-white relative overflow-hidden">
       <Navigation />
       <Hero />
       <WhatIsNitanets />
@@ -38,6 +38,9 @@ const Index = () => {
       <Practicum />
       <Philosophy />
       <Contact />
+      
+      <div className="fixed top-1/4 -left-20 w-96 h-96 bg-gradient-to-br from-violet-300/10 to-purple-400/10 rounded-full blur-3xl pointer-events-none -z-10" />
+      <div className="fixed bottom-1/3 -right-20 w-80 h-80 bg-gradient-to-tl from-violet-400/10 to-purple-300/10 rounded-full blur-3xl pointer-events-none -z-10" />
     </div>
   );
 };

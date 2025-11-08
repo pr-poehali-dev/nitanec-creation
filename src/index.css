@@ -132,6 +132,50 @@
       );
   }
 
+  .violet-ribbon-bg {
+    position: relative;
+  }
+
+  .violet-ribbon-bg::before {
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: -10%;
+    width: 120%;
+    height: 200px;
+    background: linear-gradient(
+      135deg,
+      transparent 0%,
+      rgba(139, 92, 246, 0.08) 20%,
+      rgba(167, 139, 250, 0.12) 40%,
+      rgba(139, 92, 246, 0.08) 60%,
+      transparent 100%
+    );
+    transform: rotate(-5deg);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .violet-ribbon-bg::after {
+    content: "";
+    position: absolute;
+    bottom: 20%;
+    right: -10%;
+    width: 120%;
+    height: 180px;
+    background: linear-gradient(
+      -135deg,
+      transparent 0%,
+      rgba(167, 139, 250, 0.08) 20%,
+      rgba(139, 92, 246, 0.12) 40%,
+      rgba(167, 139, 250, 0.08) 60%,
+      transparent 100%
+    );
+    transform: rotate(5deg);
+    pointer-events: none;
+    z-index: 0;
+  }
+
   .text-sage {
     color: hsl(var(--sage));
   }
