@@ -13,7 +13,7 @@ const Hero = () => {
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0">
         <img 
-          src="https://cdn.poehali.dev/projects/c545ab82-334e-4a11-bbd8-0367ce2ffbc6/files/ff90d14d-d39c-46f2-b3dc-4d708d6df34a.jpg"
+          src="https://cdn.poehali.dev/projects/c545ab82-334e-4a11-bbd8-0367ce2ffbc6/files/4b377d1c-127a-4bad-acdf-a4873c573afb.jpg"
           alt="Человек практикует Нитанец на природе"
           className="w-full h-full object-cover"
         />
