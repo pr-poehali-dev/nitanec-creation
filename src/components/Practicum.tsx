@@ -1,0 +1,164 @@
+import { Card } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import Icon from '@/components/ui/icon';
+
+const keys = [
+  {
+    number: 1,
+    emoji: '🔑',
+    title: 'Ключ Присутствия',
+    subtitle: 'Пробуждение от сна наяву',
+    description: 'Заземление в «Здесь и Сейчас» через тактильный диалог с реальностью'
+  },
+  {
+    number: 2,
+    emoji: '🔑',
+    title: 'Ключ Дыхания',
+    subtitle: 'Мост между материей и духом',
+    description: 'Дыхание как осознанный танец, живой мост к целостности'
+  },
+  {
+    number: 3,
+    emoji: '🔑',
+    title: 'Ключ Центра',
+    subtitle: 'Обретение внутренней опоры',
+    description: 'Возвращение к источнику силы, который всегда был внутри'
+  },
+  {
+    number: 4,
+    emoji: '🔑',
+    title: 'Ключ Ритма',
+    subtitle: 'Музыка души',
+    description: 'Прислушивание к уникальному пульсу вашей жизни'
+  },
+  {
+    number: 5,
+    emoji: '🔑',
+    title: 'Ключ Амплитуды',
+    subtitle: 'Расширение диапазона бытия',
+    description: 'Смелость быть разным, играть с противоположностями'
+  },
+  {
+    number: 6,
+    emoji: '🔑',
+    title: 'Ключ Импровизации',
+    subtitle: 'Танец обнажённой души',
+    description: 'Сжигание всех сценариев, прямой проводник чувств'
+  },
+  {
+    number: 7,
+    emoji: '🔑',
+    title: 'Ключ Синтеза',
+    subtitle: 'Становление потоком',
+    description: 'Момент, когда вы становитесь самим Потоком Жизни'
+  }
+];
+
+const benefits = [
+  'Ежедневные практики под руководством автора',
+  'Теоретические материалы о философии Нитанца',
+  'Закрытое сообщество единомышленников',
+  'Персональные рекомендации и поддержка',
+  'Шанс стать со-творцом традиции'
+];
+
+const Practicum = () => {
+  const scrollToContact = () => {
+    const element = document.getElementById('contact');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  return (
+    <section id="practicum" className="py-24 bg-gradient-to-b from-sage/10 to-background">
+      <div className="container mx-auto px-6">
+        <div className="max-w-4xl mx-auto text-center mb-16 fade-on-scroll">
+          <div className="inline-block mb-4 px-4 py-2 bg-sage/10 rounded-full">
+            <span className="text-sage font-medium text-sm">Практикум-инициация</span>
+          </div>
+          <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-6">
+            Алхимия свободного движения
+          </h2>
+          <p className="text-xl text-foreground/70 leading-relaxed">
+            7 дней. 7 ключей. 7 упражнений.<br />
+            Инициация в состояние Жизни.
+          </p>
+        </div>
+
+        <div className="max-w-5xl mx-auto mb-16">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 fade-on-scroll">
+            {keys.map((key, index) => (
+              <Card 
+                key={index}
+                className="p-6 bg-white/50 backdrop-blur-sm border-sage/20 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group"
+              >
+                <div className="flex items-start gap-3 mb-3">
+                  <span className="text-3xl group-hover:scale-110 transition-transform">{key.emoji}</span>
+                  <div className="flex-1">
+                    <div className="text-xs font-semibold text-sage mb-1">День {key.number}</div>
+                    <h3 className="font-serif font-bold text-lg text-primary leading-tight">
+                      {key.title}
+                    </h3>
+                  </div>
+                </div>
+                <p className="text-sm font-medium text-foreground/60 mb-2">{key.subtitle}</p>
+                <p className="text-sm text-foreground/70 leading-relaxed">{key.description}</p>
+              </Card>
+            ))}
+          </div>
+        </div>
+
+        <div className="max-w-4xl mx-auto fade-on-scroll">
+          <Card className="p-8 md:p-12 bg-gradient-to-br from-sage/5 to-ocean/5 border-sage/20">
+            <h3 className="font-serif text-2xl md:text-3xl font-bold text-primary mb-8 text-center">
+              Что вас ждёт на практикуме
+            </h3>
+            
+            <div className="grid md:grid-cols-2 gap-6 mb-8">
+              <div className="space-y-4">
+                {benefits.slice(0, 3).map((benefit, index) => (
+                  <div key={index} className="flex items-start gap-3">
+                    <Icon name="Check" size={20} className="text-sage flex-shrink-0 mt-0.5" />
+                    <p className="text-foreground/80">{benefit}</p>
+                  </div>
+                ))}
+              </div>
+              <div className="space-y-4">
+                {benefits.slice(3).map((benefit, index) => (
+                  <div key={index} className="flex items-start gap-3">
+                    <Icon name="Check" size={20} className="text-sage flex-shrink-0 mt-0.5" />
+                    <p className="text-foreground/80">{benefit}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="border-t border-sage/20 pt-8 space-y-6">
+              <div className="text-center">
+                <p className="text-lg font-semibold text-primary mb-2">Условия участия</p>
+                <p className="text-foreground/70">Участие — за добровольное пожертвование по итогу практикума</p>
+                <p className="text-sm text-foreground/60 mt-2">Количество мест ограничено</p>
+              </div>
+              
+              <div className="flex justify-center">
+                <Button onClick={scrollToContact} size="lg" className="bg-sage hover:bg-sage/90 text-white px-8">
+                  Забронировать место
+                  <Icon name="ArrowRight" size={20} className="ml-2" />
+                </Button>
+              </div>
+            </div>
+          </Card>
+        </div>
+
+        <div className="max-w-3xl mx-auto mt-12 text-center fade-on-scroll">
+          <p className="text-foreground/60 italic">
+            «Это не просто курс. Это 7-дневное путешествие-инициация, где практика становится состоянием бытия»
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Practicum;
