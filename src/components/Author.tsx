@@ -7,10 +7,12 @@ const Author = () => {
         <div className="max-w-4xl mx-auto">
           <Card className="overflow-hidden border-sage/20 shadow-xl fade-on-scroll">
             <div className="grid md:grid-cols-5 gap-8">
-              <div className="md:col-span-2 bg-gradient-to-br from-sage/20 to-ocean/20 flex items-center justify-center p-8">
-                <div className="w-48 h-48 rounded-full bg-gradient-to-br from-sage to-ocean flex items-center justify-center text-white text-6xl font-serif">
-                  А
-                </div>
+              <div className="md:col-span-2 flex items-center justify-center p-8">
+                <img 
+                  src="https://cdn.poehali.dev/files/45f4f69b-6ba0-41e7-813f-29316dd1a8cb.jpg"
+                  alt="Автор практики Нитанец"
+                  className="w-full h-auto object-cover rounded-lg"
+                />
               </div>
               
               <div className="md:col-span-3 p-8 md:p-12">

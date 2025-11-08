@@ -80,7 +80,47 @@ const WhatIsNitanets = () => {
           </div>
         </div>
 
-        <div className="max-w-3xl mx-auto space-y-8 fade-on-scroll">
+        <div className="max-w-3xl mx-auto space-y-12 fade-on-scroll">
+          <div className="bg-sage/5 rounded-2xl p-8 md:p-12 border border-sage/20">
+            <h3 className="font-serif text-2xl md:text-3xl font-bold text-primary mb-6 text-center">
+              Преимущества для физического тела
+            </h3>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="space-y-3">
+                <div className="flex items-start gap-3">
+                  <Icon name="Activity" size={24} className="text-sage flex-shrink-0 mt-1" />
+                  <div>
+                    <h4 className="font-semibold text-primary mb-1">Улучшение формы тела</h4>
+                    <p className="text-sm text-foreground/70">Гармоничное развитие всех групп мышц, создание красивого рельефа</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Icon name="TrendingDown" size={24} className="text-sage flex-shrink-0 mt-1" />
+                  <div>
+                    <h4 className="font-semibold text-primary mb-1">Нормализация веса</h4>
+                    <p className="text-sm text-foreground/70">Естественное похудение и достижение оптимального веса</p>
+                  </div>
+                </div>
+              </div>
+              <div className="space-y-3">
+                <div className="flex items-start gap-3">
+                  <Icon name="Heart" size={24} className="text-sage flex-shrink-0 mt-1" />
+                  <div>
+                    <h4 className="font-semibold text-primary mb-1">Оздоровление организма</h4>
+                    <p className="text-sm text-foreground/70">Детоксикация, укрепление иммунитета, прилив энергии</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Icon name="Zap" size={24} className="text-sage flex-shrink-0 mt-1" />
+                  <div>
+                    <h4 className="font-semibold text-primary mb-1">Сила и выносливость</h4>
+                    <p className="text-sm text-foreground/70">Развитие физической силы, гибкости и координации</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div className="text-center space-y-4">
             <h3 className="font-serif text-2xl md:text-3xl font-bold text-primary">
               Философия в действии

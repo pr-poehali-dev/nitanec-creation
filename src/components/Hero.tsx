@@ -13,11 +13,11 @@ const Hero = () => {
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0">
         <img 
-          src="https://cdn.poehali.dev/projects/c545ab82-334e-4a11-bbd8-0367ce2ffbc6/files/4b377d1c-127a-4bad-acdf-a4873c573afb.jpg"
+          src="https://cdn.poehali.dev/projects/c545ab82-334e-4a11-bbd8-0367ce2ffbc6/files/4967b1c7-f0ed-4e8d-9a27-bec278f471e5.jpg"
           alt="Человек практикует Нитанец на природе"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/60"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70"></div>
       </div>
       
       <div className="container mx-auto px-6 py-32 relative z-10">
@@ -37,9 +37,10 @@ const Hero = () => {
             Вернись домой — к себе. Вспомни язык души через танец жизни.
           </p>
           
-          <p className="text-base md:text-lg text-white/80 max-w-2xl mx-auto animate-fade-in drop-shadow-md" style={{ animationDelay: '0.6s' }}>
-            Синтез йоги, танца и боевых искусств. 20-летний опыт, воплощенный в практике для тела, души и разума.
-          </p>
+          <div className="text-base md:text-lg text-white/90 max-w-2xl mx-auto animate-fade-in drop-shadow-md space-y-2" style={{ animationDelay: '0.6s' }}>
+            <p className="font-medium">Синтез йоги, танца и боевых искусств для преображения тела и духа.</p>
+            <p className="text-white/80">✨ Улучшение формы тела • Нормализация веса • Оздоровление организма</p>
+          </div>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4 animate-fade-in" style={{ animationDelay: '0.8s' }}>
             <Button onClick={scrollToContact} size="lg" className="bg-white text-sage hover:bg-white/90 px-8 py-6 text-lg font-semibold shadow-xl">
