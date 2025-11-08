@@ -13,11 +13,11 @@ const Hero = () => {
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0">
         <img 
-          src="https://cdn.poehali.dev/projects/c545ab82-334e-4a11-bbd8-0367ce2ffbc6/files/4967b1c7-f0ed-4e8d-9a27-bec278f471e5.jpg"
-          alt="Человек практикует Нитанец на природе"
+          src="https://cdn.poehali.dev/files/45f4f69b-6ba0-41e7-813f-29316dd1a8cb.jpg"
+          alt="Практика Нитанец на закате у моря"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/60"></div>
       </div>
       
       <div className="container mx-auto px-6 py-32 relative z-10">

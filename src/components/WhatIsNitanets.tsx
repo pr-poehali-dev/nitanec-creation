@@ -33,14 +33,17 @@ const levels = [
 
 const WhatIsNitanets = () => {
   return (
-    <section id="what-is" className="py-24 bg-gradient-to-b from-background to-sage/10">
+    <section id="about" className="py-24 bg-gradient-to-b from-white via-sand/20 to-white">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center mb-16 fade-on-scroll">
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-6">
             Что такое Нитанец?
           </h2>
-          <p className="text-xl text-foreground/70 leading-relaxed">
-            Нитанец — это симфония тела, духа, сознания и природы. Это лучший способ начать день и вернуться к себе настоящему.
+          <p className="text-xl text-foreground/70 leading-relaxed mb-4">
+            Нитанец — это симфония тела, духа, сознания и природы. 
+          </p>
+          <p className="text-lg text-foreground/60 leading-relaxed">
+            Синтез 20-летнего опыта саморазвития, квинтэссенция любви к свободному движению, музыке, природе и творчеству. Это лучший способ начать день и вернуться к себе настоящему.
           </p>
         </div>
 

@@ -30,7 +30,7 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-gradient-to-b from-white via-sand/10 to-white">
       <Navigation />
       <Hero />
       <WhatIsNitanets />
